@@ -11,4 +11,4 @@ class RatingSerializer(serializers.ModelSerializer):
 class MealSerializer(serializers.ModelSerializer):
     class Meta:
         model = Meal
-        fields = ('id','title','description')
+        fields = ('id','title','description','avg_of_ratings','num_of_ratings')
